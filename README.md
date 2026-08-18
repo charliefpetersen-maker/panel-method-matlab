@@ -42,3 +42,31 @@ Inviscid, so no real drag or stall - `Cd_press` should sit near zero and is real
 ## Validation
 
 Two independent lift estimates are compared on every run: `Cl_kutta` from the circulation (Kutta-Joukowski) and `Cl_press` from integrating the surface pressure. Close agreement between the two is a strong indicator the solver is working correctly. `verify_solver.m` also checks: zero lift for a symmetric aerofoil at zero angle of attack, antisymmetric lift with angle of attack, lift slope within 10% of thin-aerofoil theory's 2*pi per radian, satisfaction of the Kutta condition, a closed trailing edge, and a well-conditioned system once the gauge constraint is applied.
+
+## Plots
+
+Example output for a single case (NACA 2412, alpha = 5 deg, N = 200 panels).
+
+### Velocity field
+
+![Velocity vectors](velocity.png)
+
+Velocity vectors around the aerofoil.
+
+### Streamlines
+
+![Streamlines](streamlines.png)
+
+Flow streamlines around the aerofoil.
+
+### Pressure coefficient field
+
+![Pressure coefficient](pressure_coeff.png)
+
+Contours of pressure coefficient (Cp) around the aerofoil.
+
+### Surface pressure distribution
+
+![Surface pressure](pressure_surface.png)
+
+Cp plotted against x/c along the upper and lower surfaces, with a small aerofoil-shape inset for reference.
