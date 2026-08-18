@@ -66,3 +66,7 @@ Contours of pressure coefficient (Cp) around the aerofoil.
 ![Surface pressure](pressure_surface.png)
 
 Cp plotted against x/c along the upper and lower surfaces
+
+## See also
+
+[Python version](https://github.com/charliefpetersen-maker/panel-method-python) of the same solver.
